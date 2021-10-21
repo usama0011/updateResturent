@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 function index() {
     return (
       <div className=" w-full">
-        <div className="pt-5 pr-14 pb-10">
+        <div className="pt-20 pr-14 ">
           <Header>Title of the Page</Header>
         </div>
         <div className="flex flex-col  mx-auto max-w-3xl items-center justify-center w-full">

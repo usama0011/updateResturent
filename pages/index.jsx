@@ -57,7 +57,7 @@ export default function Home() {
 
         <img
           src="/images/image3.jpg"
-          className="w-full rounded-lg hover:scale-110  transition-all duration-300  hover:brightness-75 max-w-sm h-80 object-cover"
+          className="w-full rounded-lg  transition duration-300  hover:brightness-75 max-w-sm h-80 object-cover"
         />
       </div>
 
@@ -186,11 +186,11 @@ export default function Home() {
               Envoyer
             </button>
           </div>
-          <div className="mt-10 mx-3 rounded-lg">
+          <div className=" mx-3 mb-5 md:mb-0 rounded-lg">
             <img
               src="https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
               alt=""
-              className=" hover:scale-110  transition-all duration-300 md:ml-20 rounded-xl hover:brightness-75 object-contain  h-full md:w-96 w-full mx-auto"
+              className="transition-all duration-300 md:ml-20 rounded-xl hover:brightness-75 object-contain  h-full md:w-96 w-full mx-auto"
             />
           </div>
         </div>

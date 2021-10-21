@@ -22,7 +22,7 @@ export default function Room({name, price, imgUrl}) {
 
         <img
           src={imgUrl}
-          className="w-full hover:scale-110  rounded-lg transition duration-300 hover:brightness-75 max-w-sm h-80 object-cover"
+          className="w-full  rounded-lg transition duration-300 hover:brightness-75 max-w-sm h-80 object-cover"
         />
       </div>
     )

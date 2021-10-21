@@ -8,7 +8,7 @@ export default function Contact() {
       <Head>
         <title>Contact</title>
       </Head>
-      <div className="pt-5 pb-10">
+      <div className="pt-20">
         <Header>Nous contacter</Header>
       </div>
       <div className=" pt-10"></div>
@@ -81,11 +81,11 @@ export default function Contact() {
               Envoyer
             </button>
           </div>
-          <div className="mt-10  md:ml-20 mx-3 rounded-sm">
+          <div className="mb-5 md:mb-0  md:ml-20 mx-3 rounded-xl">
             <img
               src="https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
               alt=""
-              className=" transition duration-200 hover:brightness-75 object-contain rounded-sm  h-full md:w-96 w-full mx-auto"
+              className=" transition duration-200 hover:brightness-75 object-contain rounded-xl  h-full md:w-96 w-full mx-auto"
             />
           </div>
         </div>

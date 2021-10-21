@@ -44,7 +44,10 @@ export default function NavBar() {
                   </div>
                 </Link>
               </a>
-              <div className=" transition ease-in-out duration-300 px-3" onClick={ShowMenu}>
+              <div
+                className=" transition ease-in-out duration-300 px-3"
+                onClick={ShowMenu}
+              >
                 {show ? <HideMe /> : <ShowMe />}
               </div>
             </div>
@@ -53,7 +56,7 @@ export default function NavBar() {
                 className="{'flex': open, 'hidden': !open}"
                 className="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row"
               >
-                <div className="relative" x-data="{ open: false }">
+                <div className="relative pr-2" x-data="{ open: false }">
                   <button
                     onClick={ShowMenu}
                     className="flex  transition duration-300 flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
@@ -78,76 +81,47 @@ export default function NavBar() {
                     <div className="absolute  left-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
                       <div className="px-2 py-2  bg-primary-color rounded-md shadow dark-mode:bg-gray-800">
                         <a
+                          onClick={() => router.push("./Hotel")}
                           className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                           href="#"
                         >
                           Menu
                         </a>
                         <a
+                          onClick={() => router.push("./spa")}
                           className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                           href="#"
                         >
                           Nos SPA
                         </a>
+
                         <a
-                          className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                          href="#"
-                        >
-                          Réservation
-                        </a>
-                        <a
+                          onClick={() => router.push("./Map")}
                           className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                           href="#"
                         >
                           Carte
                         </a>
+                        <a
+                          onClick={() => router.push("./Update")}
+                          className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                          href="#"
+                        >
+                          Mettre à jour
+                        </a>
+                       
                       </div>
                     </div>
                   )}
                 </div>
                 <a
-                  onClick={() => router.push("./spa")}
-                  className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                  href="#"
-                >
-                  Nos SPA
-                </a>
-                <a
-                  onClick={() => router.push("./Hotel")}
-                  className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                  href="#"
-                >
-                  Menu
-                </a>
-                <a
-                  onClick={() => router.push("./Contact")}
-                  className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                  href="#"
-                >
-                  Contact
-                </a>
-
-                <a
-                  onClick={() => router.push("./Update")}
-                  className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                  href="#"
-                >
-                  Mettre à jour
-                </a>
-                <a
                   onClick={() => router.push("./Book")}
-                  className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                   href="#"
                 >
                   Réservation
                 </a>
-                <a
-                  onClick={() => router.push("./Map")}
-                  className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                  href="#"
-                >
-                  Carte
-                </a>
+
                 <a
                   onClick={() => router.push("./Beach")}
                   className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
@@ -155,25 +129,33 @@ export default function NavBar() {
                 >
                   Aventure
                 </a>
+
                 <a
-                  onClick={() => router.push("./Login")}
+                  onClick={() => router.push("./Contact")}
                   className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                   href="#"
                 >
-                  Connexion
+                  Contact
                 </a>
               </nav>
             </div>
             <div className="hidden md:inline-flex items-center  relative rounded-lg">
               <div className="flex items-center relative rounded-lg">
-                <SearchIcon className="h-6 absolute  top-2  right-3 pl-1  text-gray-300" />
+                <SearchIcon className="h-5 absolute  top-2  right-3 pl-1  text-gray-400" />
                 <input
                   type="text"
                   placeholder="Search"
-                  className=" rounded-lg hidden md:inline-flex outline-none text-gray-500 pl-3 px-6 py-2"
+                  className=" rounded-lg hidden md:inline-flex text-sm outline-none text-gray-500 pl-3 px-6 py-2"
                 />
               </div>
-              <UserIcon className="h-6 ml-2 hidden md:inline-flex text-white cursor-pointer" />
+              <div>
+                <button
+                  onClick={() => router.push("./Login")}
+                  className="w-full bg-green-400 font-semibold text-white px-2 mx-2 text-sm  shadow-lg rounded-lg cursor-pointer py-2"
+                >
+                  Connexion
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -250,15 +232,15 @@ const MobileNavigation = () => {
             <input
               type="text"
               placeholder="Search"
-              className=" w-full rounded-lg outline-none focus:ring-2  focus:ring-primary-color text-gray-800 pl-3 px-6 py-2"
+              className=" w-full rounded-lg text-sm outline-none focus:ring-2  focus:ring-primary-color text-gray-800 pl-3 px-6 py-2"
             />
           </div>
-          <UserIcon className="h-6 ml-2 hidden md:inline-flex text-white cursor-pointer" />
+         
         </div>
         <div className="mx-3 ">
           <button
             onClick={() => router.push("./Login")}
-            className="w-full bg-green-400  shadow-lg rounded-lg cursor-pointer py-2"
+            className="w-full bg-green-400 text-sm  font-semibold text-white shadow-lg rounded-lg cursor-pointer py-2"
           >
             Connexion
           </button>

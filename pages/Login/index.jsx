@@ -22,13 +22,25 @@ function index() {
                 <div className="rounded-t mb-0 px-6 py-6 ">
                   <div className="text-center mb-3  rounded-lg shadow-lg  bg-blue-500 text-white ">
                     <h6 className=" text-white pt-5 text-sm font-bold">
-                      Sign in with
+                      Log in with
                     </h6>
                     <span className="flex mt-5 items-center pb-5 h-full justify-center cursor-pointer space-x-2 md:space-x-3">
-                      <img src="https://img.icons8.com/color/48/000000/google-logo.png" />
-                      <img src="https://img.icons8.com/color/48/000000/facebook-new.png" />
-                      <img src="https://img.icons8.com/color/50/000000/twitter.png" />
-                      <img src="https://img.icons8.com/color/48/000000/instagram-new.png" />
+                      <img
+                        className=" h-10"
+                        src="https://img.icons8.com/color/48/000000/google-logo.png"
+                      />
+                      <img
+                        className=" h-10"
+                        src="https://img.icons8.com/color/48/000000/facebook-new.png"
+                      />
+                      <img
+                        className=" h-10"
+                        src="https://img.icons8.com/color/50/000000/twitter.png"
+                      />
+                      <img
+                        className=" h-10"
+                        src="https://img.icons8.com/color/48/000000/instagram-new.png"
+                      />
                     </span>
                   </div>
                   <div className="btn-wrapper text-center"></div>
@@ -62,13 +74,13 @@ function index() {
                         className="block uppercase text-gray-700 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
-                        Email
+                        password
                       </label>
                       <div className="flex items-center relative">
                         <input
-                          type="email"
+                          type="password"
                           className="border-0 px-10 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                          placeholder="Email"
+                          placeholder="Password"
                           style={{ transition: "all .15s ease" }}
                         />
                         <LockClosedIcon className="h-5 absolute left-2 text-gray-600" />
@@ -94,7 +106,7 @@ function index() {
                         type="button"
                         style={{ transition: "all .15s ease" }}
                       >
-                        Sign In
+                        Log In
                       </button>
                     </div>
                   </form>
